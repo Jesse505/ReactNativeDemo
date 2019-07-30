@@ -1,6 +1,7 @@
 import { createStackNavigator, createSwitchNavigator } from "react-navigation";
 import WelcomePage from "../page/WelcomePage";
 import HomePage from "../page/HomePage";
+import DetailPage from "../page/DetailPage";
 
 const InitNavigator = createStackNavigator({
     WelcomePage: {
@@ -17,6 +18,9 @@ const MainNavigator = createStackNavigator({
         navigationOptions: {
             header: null
         }
+    },
+    DetailPage: {
+        screen: DetailPage, 
     }
 })
 
